@@ -277,17 +277,18 @@ nav .menu-items{
 .about-description{
     margin: auto;
     max-width:880px;
-    padding: 30px 10px 60px 10px;
+    padding: 30px 10px 0px 10px;
     text-align: center;
 }
 
 .about-news{
-    padding: 60px 0 0 0;
+    padding: 120px 0 0 0;
     text-align: center;
 }
 
 /*------------Events--------------*/
 .events{
+    display: flex;
     background-image: url(/images/SIATKA\ MAPA-01.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -297,9 +298,8 @@ nav .menu-items{
 
 .events-container{
     display: flex;
-    justify-content: space-between;
-    row-gap: 60px;
-    column-gap: 30px;
+    justify-content: center;
+    gap: 60px 30px;
     flex-wrap: wrap;
     margin: auto;
     width: 1240px;
@@ -309,8 +309,8 @@ nav .menu-items{
 .event-card {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    min-width: 390px;
+    width: 31.7204301%;
+    min-width: 350px;
     background: white;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
 }
