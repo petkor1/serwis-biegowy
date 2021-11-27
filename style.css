@@ -8,7 +8,7 @@ button {
     padding-right: 40px;
     width: fit-content;
     height: 60px;
-    background: #F9B233;
+    background: #F4442E; 
     filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 18px rgba(0, 0, 0, 0.12)) drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
     font-size: 20px;
     font-weight: 900;
@@ -23,7 +23,7 @@ button {
 }
 
 button:hover{
-    background: #f89f04;
+    background: #F9B233;
 }
 
 h1 {
@@ -46,6 +46,18 @@ h2 {
     letter-spacing: 0px;
     color: #1c2525;
 }
+
+h3 {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 110%;
+    letter-spacing: 0px;
+    color: #1c2525;
+}
+
+
 
 h4 {
     font-size: 34px;
@@ -81,6 +93,15 @@ body{
     font-family: sans-serif;
     height: 100%;
 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px auto 120px auto;
+    width: 1240px;
+    padding: 0 20px 0 20px;
 }
 
 /*------------NAWIGACJA--------------*/
@@ -236,7 +257,7 @@ nav .menu-items{
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding: 60px 20px 30px 20px;
     z-index: 99;
     left: 0;
@@ -255,6 +276,7 @@ nav .menu-items{
     box-shadow: 0 2 2 black;
     font-size: 20px;
     letter-spacing: 1.2;
+    margin-top: -3px;
 }
 .header-button {
     width: 300px; 
@@ -263,7 +285,7 @@ nav .menu-items{
 
 /* ---------------- About -------------- */
 
-.about-xrun{
+.title-container{
     display: flex;
     flex-direction: column;
     padding: 60px 0 60px 0;
@@ -281,7 +303,7 @@ nav .menu-items{
     text-align: center;
 }
 
-.about-news{
+.events-section-title{
     padding: 120px 0 0 0;
     text-align: center;
 }
@@ -356,4 +378,152 @@ nav .menu-items{
 
 .event-card-button span:hover{
     padding-right: 25px;
+}
+
+/*------------News--------------*/
+
+.news-title{
+    padding: 0;
+    text-align: center;
+}
+
+.news{
+    display: flex;
+    background-image: url(/images/SIATKA\ MAPA-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 160px;
+}
+
+
+.news-container{
+    display: flex;
+    justify-content: center;
+    gap: 60px 30px;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1240px;
+    margin-bottom: -30px;
+    padding: 30px 20px 0 20px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    width: 31.7204301%;
+    min-width: 350px;
+    background: white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.news-card-img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-card-discription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px 20px;
+    background: white;
+}
+.news-card-discription .post-date {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.news-card-discription .title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.news-card-discription p{
+    display: flex;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+.news-card-button{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    line-height: 140%;
+    letter-spacing: 1.1px;
+    color: #1c2525;
+    padding-top: 20px;
+}
+.news-card-button span{
+    padding-right: 15px;
+    transition: padding-right 0.4s;
+}
+
+.news-card-button span:hover{
+    padding-right: 25px;
+}
+
+/*------------Sponsors--------------*/
+
+.sponsors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px auto 120px auto;
+    padding: 0 20px 0 20px;
+}
+
+.sponsors-container h3 {
+    padding-bottom: 60px;
+}
+
+.sponsors-container img {
+    max-width: 436px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 120px 0;
+}
+.partners h4{
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.partners-logo{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1240px;
+}
+.partners-logo img{
+    display: flex;
+    width: 160px;
+}
+
+
+/*------------Footer--------------*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 20px 100px 20px;
+    width: 100%;
+    height: 466.87px;
+    background: #1c2525;
 }
