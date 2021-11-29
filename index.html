@@ -20,11 +20,22 @@
             </a>
             
             <div class="menu-items">
-                <a class="menu-item" href="/">Strona Główna</a>
-                <a class="menu-item" href="#">Imprezy</a>
-                <a class="menu-item" href="#">Aktualności</a>
-                <a class="menu-item" href="#">Galeria</a>
-                <a class="menu-item" href="#">Kontakt</a>
+                <a class="menu-item" href="/"><button class="menu-button">Strona Główna</button></a>
+
+                <div class="dropdown">
+                    <a href="" class="menu-item"><button class="menu-button">Imprezy</button></a>
+                    <div class="dropdown-content">
+                        <span><strong>Sezon 2022</strong></span>
+                        <a href="#">Złotopień</a>
+                        <a href="#">Tajemnicze Kopce</a>
+                        <a href="#">Pani Mogiła</a>
+                        <a href="#">Festiwal Biegów Górskich w Limanowej</a>
+                        <a href="#">Ołtarz w Chmurach</a>
+                        <a href="#">Biała Dama</a>
+                    </div>
+                </div>
+                <a class="menu-item" href="#news"><button class="menu-button">Aktualności</button></a>
+                <a class="menu-item" href="/kontakt"></a><button class="menu-button">Kontakt</button></a>
             </div>
 
             <div class="social">
@@ -48,7 +59,7 @@
             <div class="header-cta">
                 
                 <h5>Biegaj po beskidach. Walcz o miejsce w wielkim finale</h5>
-                <button class="header-button">Zobacz&nbsp;imprezy</button> 
+                <a href="#events"><button type="button" class="header-button">Zobacz&nbsp;imprezy</button></a> 
             </div>  
             <div class="main-item">
                 <img src="/images/biegacz 1.jpg" alt="Tajemnicze Kopce" class="main-item-img">
@@ -86,15 +97,15 @@
 <!------------------ ABOUT ----------------------->
         <section>
             <div class="title-container">
-                <!-- <h1 class="about-title">Czym jest<br>Xun?</h1> -->
+                <h1 class="about-title">Czym jest<br>Xun?</h1>
                 <p class="about-description">XRUN to cykl biegów górskich rozgrywany w Małopolsce. Każdy z zawodników ma do wyboru dystans klasyczny, bądź dystans mini. Rok 2022 to 6 imprez, w tym jeden duży Festiwal Biegów Górskich w Limanowej, a także biegi dla dzieci podczas każdej imprezy. Zapisz się na bieg, rywalizuj przez cały rok i zakwalifikuj się do Wielkiego Finału.  </p>
                
 <!------------------ EVENTS ----------------------->
-                <!-- <h1 class="events-section-title">Wybierz imprezę</h1> -->
+                <h1 id="events" class="events-section-title">Wybierz imprezę</h1>
                 <p class="about-description">Spróbuj swoich sił na jednej, bądź kilku imprezach i rywalizuj cały rok w Pucharze XRUN Classic, XRUN Mini, a także XRUN Kids.</p>
             </div>
 
-            <div class="events">
+            <div  class="events">
                 <div class="events-container">
                     <div class="event-card">
                         <img src="/images/zlotopien-event.jpg" alt="Złotopień wydarzenie" class="card-img">
@@ -153,8 +164,8 @@
             </div> 
 
 <!------------------ NEWS ----------------------->
-            <div class="title-container">               
-                <!-- <h1 class="news-title">Aktualności</h1> -->
+            <div id="news" class="title-container">               
+                <h1 class="news-title">Aktualności</h1>
             </div>
             <div class="news">
                 <div class="news-container">
@@ -200,12 +211,11 @@
                     </div>
                     <h4>Partnerzy</h4>
                     <div class="partners-logo">
-
-                        <div><img src="/images/butyjana.jpg" alt="butyjana"></div>
-                        <div><img src="/images/serce-beskidu.jpg" alt="serce beskidu"></div>
-                        <div><img src="/images/ultrasklep.jpg" alt="ultrasklep"></div>
-                        <div> <img src="/images/blachostal.jpg" alt="blachostal"></div>
-                        <div><img src="/images/kasina-ski.jpg" alt="kasina ski"></div>
+                        <div><a href="https://www.butyjana.pl/" target="_blank"><img src="/images/butyjana.jpg" alt="butyjana"></a></div>
+                        <div><a href="https://sercebeskidu.pl/" target="_blank"><img src="/images/serce-beskidu.jpg" alt="serce beskidu"></a></div>
+                        <div><a href="https://ultrasklep.pl/" target="_blank"><img src="/images/ultrasklep.jpg" alt="ultrasklep"></a></div>
+                        <div> <a href="https://blachostal-garaze.pl/" target="_blank"><img src="/images/blachostal.jpg" alt="blachostal"></a></div>
+                        <div><a href="https://kasinaski.pl/" target="_blank"><img src="/images/kasina-ski.jpg" alt="kasina ski"></a></div>
   
                     </div>
                     
@@ -222,33 +232,36 @@
                         <img src="/images/logo.svg" alt="logo xrun" class="logo-footer">
                         <h5 class="social-title">Obserwuj nas</h5>
                         <div class="social">
-                            <img src="/images/Ikona facebook.svg" alt="facebook" class="icon-footer">
-                            <img src="/images/Ikona instagram.svg" alt="instagram" class="icon-footer">
+                            <a href="https://www.facebook.com/xrun.io"><img src="/images/Ikona facebook.svg" alt="facebook" class="icon-footer"></a> 
+                            <a href="https://www.instagram.com/xrun.io/"><img src="/images/Ikona instagram.svg" alt="instagram" class="icon-footer"></a>
                         </div>
                     
                     </div>
                     <div class="column">
                         <h5>Ważne linki</h5>
-                        <a href="">Regulamin</a>
-                        <a href="">Imprezy</a>
-                        <a href="">Aktualności</a>
-                        <a href="">Polityka Prywtności</a>
+                        <a href="/regulamin">Regulamin</a>
+                        <a href="#events">Imprezy</a>
+                        <a href="#aktualności">Aktualności</a>
+                        <a href="/polityka-prywatnosci">Polityka Prywtności</a>
                     </div>
                     <div class="column">
                         <h5>Kontakt</h5>
-                        <a href="">tel: +48 603 769 214</a>
-                        <p>Fundacja „Beskid”
-                            Alfreda Dauna 58, Kraków, małopolskie
-                            NIP 6793208594
-                            REGON 387562666
+                        <a href="tel:+48603769214">tel: +48 603 769 214</a>
+                        <address>
+                            <p><strong>Fundacja „Beskid”</strong><br>
+                            Alfreda Dauna 58, Kraków, małopolskie<br>
+                            NIP 6793208594<br>
+                            REGON 387562666<br>
                             KRS 0000870429</p>
+                        </address>
+                        
                     </div>  
 
                 </div>
                 
 
             </div>
-            <div class="rights"><p>Strona wykonana przez Piotra Korbasa i Jarka Czubę. Wszelkie prawa zastrzeżone</p></div>
+            <div class="rights"><p>Strona wykonana przez Piotra Korbasa i Jarosława Czubę. Wszelkie prawa zastrzeżone.</p></div>
         </footer>
 
     </main>

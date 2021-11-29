@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -15,15 +16,16 @@ button {
     text-align: center;
     text-transform: uppercase;
     border: none;
-    transform: skew(-20deg);
+    transform: skew(-13deg);
     cursor: pointer;
-    transition: background 0.4s;
+    transition: background 0.4s, color 0.4s;
     letter-spacing: 1.1px;
 
 }
 
 button:hover{
     background: #F9B233;
+    color: #1c2525;
 }
 
 h1 {
@@ -107,7 +109,7 @@ body{
 .nav-container{
     display: flex;
     background: #1c2525;
-    z-index: 999;
+    z-index: 998;
 }
 
 nav{
@@ -168,11 +170,52 @@ nav .menu-items{
     margin-left: auto;
 }
 
-.menu-items .menu-item:not(:first-child) {
-    padding-left: 30px;
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 340px;
+    overflow: auto;
+    background: white;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 999;
+  }
+.dropdown-content a {
+    display: block;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 20px 20px 20px 40px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 130%;
+  }
+.dropdown-content span {
+    text-transform: uppercase;
+    
+    display: block;
+    color: #000000;
+    padding: 20px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+.menu-button{
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+
 }
-
-
 
 /*------------HEADER--------------*/
 .header-container {
@@ -521,6 +564,10 @@ nav .menu-items{
     display: flex;
     flex: 1;
 }
+.partners-logo div a{
+    display: flex;
+    flex: 1;
+}
 
 .partners-logo img {
     margin: auto;
@@ -548,7 +595,7 @@ footer .columns-container{
 footer .column1 {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    flex: 1;
 }
 
 footer .columns {
@@ -570,6 +617,11 @@ footer a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.67);
     padding-bottom:20px;
+    transition: color 0.3s;
+}
+
+footer a:hover{
+    color: #F9B233;
 }
 
 footer p {
