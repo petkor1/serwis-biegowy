@@ -267,7 +267,7 @@ nav .menu-items{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px 10px;
     background: #1c2525;
 }
 
@@ -282,11 +282,12 @@ nav .menu-items{
 
 .mobile-logo-container h5 {
     color: white;
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 10px;
     font-weight: 600;
     text-align: right;
     line-height: 140%;
+    font-style: normal;
 }
 
 .mobile-logo-menu {
@@ -533,13 +534,38 @@ nav .menu-items{
 .about-description{
     margin: auto;
     max-width:880px;
-    padding: 30px 10px 0px 10px;
+    padding: 30px 0px 0px 10px;
     text-align: center;
+}
+.mobile-about-subtitle {
+    text-align: center;
+    color: #F9B233;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 900px) {
+    .mobile-about-subtitle{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-description{
+        padding: 10px 0px 20px 0px;
+    }
 }
 
 .events-section-title{
     padding: 120px 0 0 0;
     text-align: center;
+}
+
+@media screen and (max-width:900px) {
+   .events-section-title{
+    padding: 60px 0 0 0;
+    text-align: center;
+}
 }
 
 /*------------Events--------------*/
@@ -560,6 +586,12 @@ nav .menu-items{
     margin: auto;
     width: 1240px;
     padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width:900px) {
+    .events-container{
+        gap: 30px;
+    }
 }
 
 .event-card {
@@ -644,8 +676,7 @@ nav .menu-items{
 
 @media screen and (max-width:900px){
     .title-container{
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding: 20px;
     }
 }
 
