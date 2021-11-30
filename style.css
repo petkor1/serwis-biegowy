@@ -278,10 +278,11 @@ nav .menu-items{
 
 .mobile-logo-container{
     display: flex;
+    align-items: center;
 }
 
 .mobile-logo-container h5 {
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
     font-size: 13px;
     padding-left: 10px;
     font-weight: 600;
@@ -391,7 +392,6 @@ nav .menu-items{
 .main-item {
     position: relative;
     display: flex;
-    /* width: 25%; */
     flex:1;
     align-items: center;
     justify-content: center;
@@ -539,8 +539,9 @@ nav .menu-items{
 }
 .mobile-about-subtitle {
     text-align: center;
-    color: #F9B233;
+    color:#1c252598;
     font-size: 16px;
+    padding-bottom: 5px;
 }
 
 @media screen and (min-width: 900px) {
@@ -553,6 +554,7 @@ nav .menu-items{
 @media screen and (max-width: 900px) {
     .about-description{
         padding: 10px 0px 20px 0px;
+
     }
 }
 
