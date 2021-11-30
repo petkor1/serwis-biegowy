@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <!------------------ NAGŁÓWEK ----------------------->
+    <!------------------ NAGŁÓWEK Desktop----------------------->
 
     <div class="nav-container">
         <nav id="nav">
@@ -51,10 +51,37 @@
 
         </nav>
     </div>
+
+    <!------------------ mobile nav ----------------------->
+
+    <div class="nav-mobile-container">
+        <a href="/" class="logo-mobile"><img src="/images/logo.svg" alt="logo Xrun Biegi Górskie" style="height: 30px;"></a>
+        <a href="javascript:void(0);" class="icon-mobile-menu" onclick="mobileMenu()"><img src="/images/menu_white_24dp.svg" alt="hamburger menu"></a>
+    </div>
+    <div id="mobileLinks">
+        <ul>
+            <li><a id="eventsMobileMenu" href="#" onclick="subMenuEvents()">Imprezy</a></li>
+            <ul id="subMenuEvents">
+                <li><a href="#">Złotopień</a></li>
+                <li><a href="#">Tajemnicze Kopce</a></li>
+                <li><a href="#">Pani Mogiła</a></li>
+                <li><a href="#">Festiwal Biegów Górskich</a></li>
+                <li><a href="#">Ołtarz w Chmurach</a></li>
+                <li><a href="#">Biała Dama</a></li>
+            </ul>
+            <li><a href="#news">Aktualności</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+        
+        
+        
+    </div>
    
-   
-    <main>
+
+    
     <!------------------ HEADER ----------------------->
+
+    <main>
         <div class="header-container">   
             <div class="header-cta">
                 
