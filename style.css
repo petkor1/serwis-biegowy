@@ -198,12 +198,12 @@ nav .social{
 .mobile-social{
     display: flex;
     align-items: center;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .mobile-social .inst-icon {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .social .inst-icon {
@@ -330,7 +330,7 @@ nav .menu-items{
 }
 #mobileLinks li {
     list-style-type: none;
-    padding: 10px;
+    padding: 20px;
 }
 
 #mobileLinks a{
