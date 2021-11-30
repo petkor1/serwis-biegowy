@@ -278,15 +278,15 @@ nav .menu-items{
 
 .mobile-logo-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .mobile-logo-container h5 {
     color: rgba(255, 255, 255, 0.87);
-    font-size: 13px;
+    font-size: 14px;
     padding-left: 10px;
     font-weight: 900;
-    line-height: 140%;
+    line-height: 130%;
     font-style: normal;
 }
 
