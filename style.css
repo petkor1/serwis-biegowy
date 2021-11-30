@@ -195,6 +195,17 @@ nav .social{
     margin-left: 45px;
 }
 
+.mobile-social{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mobile-social .inst-icon {
+    margin-left: 30px;
+}
+
 .social .inst-icon {
     margin-left: 20px;
 }
@@ -259,6 +270,8 @@ nav .menu-items{
     padding: 10px;
     background: #1c2525;
 }
+
+
 .nav-mobile-container a{
     text-decoration: none;
 }
@@ -278,6 +291,9 @@ nav .menu-items{
 
 .mobile-logo-menu {
     height: 45px;
+}
+.icon-mobile-menu img{
+    width: 40px;
 }
 
 @media screen and (min-width: 900px){
@@ -358,12 +374,18 @@ nav .menu-items{
 
 .mobile-header-container {
     position: relative;
-    display: flex;
+    display: none;
     gap: 0;
     width: 100%;
     max-height: 90vh;
     background: #1c2525;
 } 
+@media screen and (max-width: 900px){
+    .mobile-header-container {
+        display: flex;
+    }
+}
+
 
 .main-item {
     position: relative;
@@ -462,7 +484,7 @@ nav .menu-items{
     left: 0;
 	right: 0;
 	bottom: 0;
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 80px 20px;
     margin: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.767));
 
@@ -487,6 +509,7 @@ nav .menu-items{
     box-shadow: 0 2 2 black;
     font-size: 34px;
     letter-spacing: 1.2;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
 .header-button {
@@ -610,6 +633,13 @@ nav .menu-items{
 .news-title{
     padding: 0;
     text-align: center;
+}
+
+@media screen and (max-width:900px){
+    .title-container{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }
 
 .news{
@@ -738,6 +768,14 @@ nav .menu-items{
     min-width: 300px;
     margin: auto;
 }
+
+@media screen and (max-width:900px){
+    .sponsor img{
+        width: 300px;
+    }
+
+}
+
 .partners-logo {
     display: flex;
     justify-content: space-between;
@@ -792,7 +830,7 @@ footer .columns {
     padding: 60px 20px 60px 20px;
     width:1240px;
     margin: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 30px;
 }
 
@@ -800,6 +838,13 @@ footer .columns {
     width: 200px;
     padding-bottom: 40px;
 }
+
+@media screen and (max-width:900px){
+    .column1 .logo-footer{
+        width: 80px;
+    }
+}
+
 footer a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.67);
