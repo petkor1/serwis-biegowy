@@ -830,8 +830,15 @@ footer .columns {
     padding: 60px 20px 60px 20px;
     width:1240px;
     margin: auto;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 30px;
+}
+
+@media screen and (max-width:900px){
+    footer .columns{
+        flex-wrap: wrap-reverse;
+
+    }
 }
 
 .column1 .logo-footer{
