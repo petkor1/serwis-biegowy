@@ -39,6 +39,10 @@ h1 {
     
 }
 
+@media screen and (max-width: 900px) {
+    h1 {font-size: 36px;}
+  }
+
 h2 {
     font-size: 60px;
     font-style: italic;
@@ -255,6 +259,26 @@ nav .menu-items{
     padding: 10px;
     background: #1c2525;
 }
+.nav-mobile-container a{
+    text-decoration: none;
+}
+
+.mobile-logo-container{
+    display: flex;
+}
+
+.mobile-logo-container h5 {
+    color: white;
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 140%;
+}
+
+.mobile-logo-menu {
+    height: 45px;
+}
 
 @media screen and (min-width: 900px){
     .nav-mobile-container{
@@ -268,9 +292,23 @@ nav .menu-items{
     flex-direction: column;
     background: white;
     padding: 20px;
+    z-index: 99;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 
 }
+
+@media screen and (max-width: 900px){
+    #mobileLinks{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #subMenuEvents{
+        display: none;
+    }
+}
+
 #mobileLinks li:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.052);
 }
@@ -314,6 +352,18 @@ nav .menu-items{
     max-height: 90vh;
     background: #1c2525;
 }
+@media screen and (max-width: 900px) {
+    .header-container {display: none;}
+  }
+
+.mobile-header-container {
+    position: relative;
+    display: flex;
+    gap: 0;
+    width: 100%;
+    max-height: 90vh;
+    background: #1c2525;
+} 
 
 .main-item {
     position: relative;
@@ -382,6 +432,13 @@ nav .menu-items{
     height: 100%;
     object-fit: cover;
 }
+
+.mobile-main-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .header-cta {
     position: absolute;
     display: flex;
@@ -398,6 +455,22 @@ nav .menu-items{
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.767));
 
 }
+.mobile-header-cta {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+	right: 0;
+	bottom: 0;
+    padding: 20px 20px 60px 20px;
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.767));
+
+}
+
+.mobile-header-button {
+    color:white; 
+}
 
 .header-cta h5 {
     padding-right: 60px;
@@ -407,6 +480,15 @@ nav .menu-items{
     letter-spacing: 1.2;
     margin-top: -3px;
 }
+
+.mobile-header-cta h5 {
+    padding-bottom: 40px;
+    color: white;
+    box-shadow: 0 2 2 black;
+    font-size: 34px;
+    letter-spacing: 1.2;
+    }
+
 .header-button {
     width: 300px; 
     color:white; 
