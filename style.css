@@ -1174,7 +1174,7 @@ footer .rights{
     width: 100%;
     height: fit-content;
     padding: 15px 0 0 0;
-    border-top:1px solid rgba(255, 255, 255, 0.50);
+    border-top:1px solid rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0);
     transform: skew(0deg);
 }
@@ -1303,5 +1303,5 @@ footer .rights{
     max-width: 800px;
     padding: 20px;
     margin: auto;
-    padding-bottom: 100PX;
+    padding-bottom: 120PX;
 }
