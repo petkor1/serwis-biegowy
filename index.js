@@ -32,6 +32,15 @@ function subMenuEvents() {
   }
 }
 
+/*----------- accordion------------*/
+function accordion(id) {
+  var show = document.getElementById(id);
+  if (show.style.display === "flex") {
+    show.style.display = "none";
+  } else {
+    show.style.display = "flex";
+  }
+}
 
 /*----------- scroll to ------------*/
 // var mybutton = document.getElementById("myBtn");

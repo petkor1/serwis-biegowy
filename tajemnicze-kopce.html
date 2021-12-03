@@ -26,8 +26,8 @@
                     <div class="dropdown-content">
                         <span><strong>Sezon 2022</strong></span>
                         <a href="#">Złotopień</a>
-                        <a href="#">Tajemnicze Kopce</a>
-                        <a href="/tajemnicze-kopce.html">Pani Mogiła</a>
+                        <a href="/tajemnicze-kopce.html">Tajemnicze Kopce</a>
+                        <a href="#">Pani Mogiła</a>
                         <a href="#">Festiwal Biegów Górskich w Limanowej</a>
                         <a href="#">Ołtarz w Chmurach</a>
                         <a href="#">Biała Dama</a>
@@ -114,10 +114,10 @@
                             DOBCZYCE</li>
                     </ul>
                     <div class="card-for-event-icons">
-                        <img src="/images/map.svg" alt="Mapa trasy">
-                        <img src="images/satellite.svg" alt="Trasa GPX">
-                        <img src="images/pan_tool.svg" alt="Regulamin">
-                        <img src="images/speaker_notes.svg" alt="Lista startowa">
+                        <a href="#" class="card-for-event-icon"><img src="/images/map.svg" alt="Mapa trasy"><span>Mapa<br>Trasy</span></a>
+                        <a href="#" class="card-for-event-icon"><img src="images/satellite.svg" alt="Trasa GPX"><span>Ważne<br>info</span></a>
+                        <a href="#" class="card-for-event-icon"><img src="images/pan_tool.svg" alt="Regulamin"><span>Zobacz Regulamin</span></a>
+                        <a href="#" class="card-for-event-icon"><img src="images/speaker_notes.svg" alt="Lista startowa"><span>Lista startowa</span></a>     
                     </div>
                 </div>
                 <div class="card-for-event-bottom">
@@ -126,30 +126,53 @@
                             <span>cena od</span>
                             <h5>100,00 zł</h5>
                         </div>
-                        <a href="#">Rejestracja</a>
+                        <a class="register-button" href="#">Rejestracja</a>
+                        
                     </div>
 
                     <ul>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
+                        <li class="nonlist">+ MEDAL NA MECIE</li>
+                        <li class="nonlist">+ CIEPŁY POSIŁEK</li>
+                        <li class="nonlist">+ PAMIATKOWE ZDJECIA</li>
+                        <li class="nonlist">+ NAGRODY DLA NAJLEPSZYCH</li>
+                        <li class="nonlist">+ NIEZAPOMNIANE PRZEZYCIA</li>
+                        <li class="nonlist">+ GADZETY OD SPONSORÓW</li>
+                        <li class="nonlist">+ 5 ZŁ BUS BILET NA START</li>
                     </ul>
 
-                    <div class="card-for-event-bottom-according">
-                        <img src="/images/ikona-cena.svg" alt="ikona cena">
-                        <span>Cena wzrasta od 01/01/2022</span>
-                        <img src="/images/ikona-strzałka-cena.svg" alt="strzałka cena">
+                    <button class="btn-accordion" onclick="accordion('accordion-show')">
+                            <img src="/images/ikona-cena.svg" alt="ikona cena">
+                            <span>Cena wzrasta od 01/01/2022</span>
+                            <img id="arrow-price-down" src="/images/ikona-strzałka-cena.svg" alt="strzałka cena">
+                    </button>
+                    <div id="accordion-show">
+                        <table id="prices-table">
+                            <tr>
+                              <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">1 Grudniowa przedsprzedaż</span><span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span></td>
+                              <td class="td-left-column">100,00 zł</tr>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">2 Cena wzrasta</span><span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span></td>
+                                <td class="td-left-column">120,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">3 Cena wzrasta</span><span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span></td>
+                                <td class="td-left-column">130,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">4 Cena wzrasta</span>
+                                    <span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span><span style="font-size: 9px; color:#F98418;"> tylko w biurze zawodów</span></td>
+                                <td class="td-left-column">150,00 zł</td>
+                            </tr>
+
+                            
+                          </table>
                     </div>
 
                 </div>
 
 
             </div>
-
 
             
         </div>
