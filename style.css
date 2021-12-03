@@ -1034,9 +1034,11 @@ footer .rights{
 
 
 .card-for-event {
+    position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
+    height: fit-content;
     width: 31.7204301%;
     min-width: 350px;
     background: white;
@@ -1119,7 +1121,7 @@ footer .rights{
 }
 .card-for-event-bottom-event-price span{
     color: rgba(255, 255, 255, 0.87);
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px
 
@@ -1190,6 +1192,27 @@ footer .rights{
     display: none;
     padding-top: 20px;
 }
+#accordion-show-1{
+    display: none;
+    padding-top: 20px;
+}
+#accordion-show-2 {
+    display: none;
+    padding-top: 20px;
+}
+/* .accordion-show{
+    position: absolute;
+    box-sizing: border-box;
+    bottom: -134px;
+    background: #232E2E;
+    width: 100%;
+    left: 0;
+    padding: 0 20px 20px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+} */
+
+
 #prices-table{
     width: 100%;
 }
@@ -1203,3 +1226,82 @@ footer .rights{
     color: #CAD51F;
 }
 
+.maps-section-title{
+    padding: 20px;
+    text-align: center;
+}
+.maps-description{
+    padding: 0 20px;
+    text-align: center; 
+}
+.card-for-event-bottom-event-price .adnotacja{
+    font-size: 10px;
+    color: #F98418;;
+}
+
+.maps-container {
+    display: flex;
+    padding: 20px;
+}
+.maps-tabs{
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+
+}
+/* Style the tab */
+/* .tab { */
+    /* background-color: #f1f1f1; */
+    /* border: 1px solid #ccc; */
+    /* overflow: hidden; */
+  /* } */
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: #ccc;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    box-shadow: none;
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #F9B233;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    flex-direction: column;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    /* border-top: none; */
+  }
+  .tabcontent.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.maps-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 20px 20px;
+}
+
+/*------------INFO--------------*/
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    padding-bottom: 100PX;
+}
