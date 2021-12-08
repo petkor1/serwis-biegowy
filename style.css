@@ -1020,6 +1020,7 @@ footer .rights{
 }
 .event-title-container {
     position: absolute;
+    flex-direction: column;
     display: flex;
     width: 1400px;
     padding: 20px;
@@ -1032,14 +1033,7 @@ footer .rights{
 
 @media screen and (max-width:900px){
     .event-title-container {
-        position: absolute;
-        display: flex;
-        width: 100%;
-        padding: 20px;
-        margin: auto;
-        z-index: 1;
-        left: 0;
-        right: 0;
+        width: auto;
         bottom: 160px;
     }
 }
@@ -1062,6 +1056,8 @@ footer .rights{
 
 
 .event-title-button {
+    display: flex;
+    align-items: center;
     background: #F9B233;
     padding: 20px 50px;
     margin: 10px 0;
@@ -1071,6 +1067,7 @@ footer .rights{
 @media screen and (max-width:900px){
     .event-title-button {
         padding: 20px 30px;
+        width: fit-content;
     }
 }
 
@@ -1083,9 +1080,30 @@ footer .rights{
 
 @media screen and (max-width:900px){
     .event-title-button h2 {
-        font-size: 34px;
+        font-size: 30px;
     
     }
+}
+
+
+.event-title-container .distance-ikon {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (min-width:900px){
+    .event-title-container .distance-ikon {
+        display: none;
+    
+    }
+}
+
+.event-title-container .distance-ikon img{
+    display: flex;
+    width: 120px;
 }
 
 /*------------CARDS--------------*/
