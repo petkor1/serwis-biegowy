@@ -1034,7 +1034,9 @@ footer .rights{
 @media screen and (max-width:900px){
     .event-title-container {
         width: auto;
-        bottom: 160px;
+        left: 0;
+        right: 0;
+        bottom: 180px;
     }
 }
 
@@ -1056,12 +1058,12 @@ footer .rights{
 
 
 .event-title-button {
-    display: flex;
     align-items: center;
     background: #F9B233;
     padding: 20px 50px;
     margin: 10px 0;
     transform: skew(-10deg);
+    width: fit-content;
 }
 
 @media screen and (max-width:900px){
@@ -1398,6 +1400,12 @@ footer .rights{
     padding: 60px 20px 20px 20px;
 }
 
+@media screen and  (max-width:900px){
+    .maps-title-container{
+        padding: 0px 20px 20px 20px;
+    }
+}
+
 /*------------INFO--------------*/
 
 .info-container{
@@ -1408,3 +1416,4 @@ footer .rights{
     margin: auto;
     padding-bottom: 120PX;
 }
+
