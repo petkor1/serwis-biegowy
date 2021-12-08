@@ -1370,6 +1370,7 @@ footer .rights{
   /* Create an active/current tablink class */
   .tab button.active {
     background-color: #F9B233;
+    color: rgba(0, 0, 0, 0.87);
   }
   /* Style the tab content */
   .tabcontent {
