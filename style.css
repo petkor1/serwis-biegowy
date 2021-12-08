@@ -3,6 +3,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+@font-face {
+    font-family: helvetica;
+    src: url(/fonts/Neue\ Helvetica\ POLSKA\ Condensed\ Black\ Oblique.ttf);
+  }
 
 button {
     padding-left: 40px;
@@ -16,7 +20,7 @@ button {
     text-align: center;
     text-transform: uppercase;
     border: none;
-    transform: skew(-13deg);
+    transform: skew(-10deg);
     cursor: pointer;
     transition: background 0.4s, color 0.4s;
     letter-spacing: 1.1px;
@@ -38,11 +42,11 @@ a {
 
 h1 {
     font-size: 96px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 100%;
-    letter-spacing: -1px;
+    /* line-height: 100%; */
+    /* letter-spacing: -1px; */
     color: #1c2525;
     
 }
@@ -53,21 +57,21 @@ h1 {
 
 h2 {
     font-size: 60px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 110%;
-    letter-spacing: 0px;
+    /* line-height: 110%; */
+    /* letter-spacing: 0px; */
     color: #1c2525;
 }
 
 h3 {
     font-size: 48px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 110%;
-    letter-spacing: 0px;
+    /* line-height: 110%; */
+    /* letter-spacing: 0px; */
     color: #1c2525;
 }
 
@@ -75,7 +79,7 @@ h3 {
 
 h4 {
     font-size: 34px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 900;
     text-transform: uppercase;
     line-height: 110%;
@@ -86,7 +90,7 @@ h4 {
 
 h5 {
     font-size: 24px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 900;
     text-transform: uppercase;
     line-height: 120%;
@@ -95,6 +99,7 @@ h5 {
 }
 
 p {
+    font-family: sans-serif;
     color: rgba(0, 0, 0, 0.67);
     font-size: 16px;
     line-height: 170%;
@@ -103,8 +108,16 @@ p {
     
 }
 
-body{
+ul {
     font-family: sans-serif;
+    
+}
+span {
+    font-family: sans-serif;
+}
+
+body{
+    font-family: helvetica;
     height: 100%;
 
 }
@@ -1017,23 +1030,62 @@ footer .rights{
     bottom: 130px;
 }
 
+@media screen and (max-width:900px){
+    .event-title-container {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        bottom: 160px;
+    }
+}
+
 .event-title h5 {
     font-size: 34px;
     color: white;
     padding-left: 50px;
     font-weight: 900;
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
-
 }
+
+@media screen and (max-width:900px){
+    .event-title h5 {
+        font-size: 24px;
+        padding-left: 30px;
+    }
+}
+
+
 
 .event-title-button {
     background: #F9B233;
     padding: 20px 50px;
     margin: 10px 0;
-    transform: skew(-13deg);
+    transform: skew(-10deg);
 }
+
+@media screen and (max-width:900px){
+    .event-title-button {
+        padding: 20px 30px;
+    }
+}
+
+
 .event-title-button h2 {
     color: white;
+    transform: skew(10deg);
+
+}
+
+@media screen and (max-width:900px){
+    .event-title-button h2 {
+        font-size: 34px;
+    
+    }
 }
 
 /*------------CARDS--------------*/
@@ -1069,9 +1121,10 @@ footer .rights{
 
 .card-for-event-top ul li{
     list-style-type: none;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: bold;
+    letter-spacing: 0.8px;
     padding-bottom: 15px;
     color: rgba(0, 0, 0, 0.55);
 
@@ -1129,7 +1182,7 @@ footer .rights{
     color: rgba(255, 255, 255, 0.87);
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 1px
+    letter-spacing: 1px;
 
 }
 .card-for-event-bottom-event-price h5{
@@ -1144,7 +1197,7 @@ footer .rights{
     padding: 0px 10px;
     background: #F9B233;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 1.1px;
     text-transform: uppercase ;
     border: 1px solid #F9B233;
     border-radius: 8px;
@@ -1165,6 +1218,7 @@ footer .rights{
 
 .card-for-event-bottom li{
     font-size: 14px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.50);
 }
@@ -1180,11 +1234,12 @@ footer .rights{
     width: 100%;
     height: fit-content;
     padding: 15px 0 0 0;
-    border-top:1px solid rgb(255, 255, 255);
+    border-top:1px solid rgba(255, 255, 255, 0.24);
     background: rgba(255, 255, 255, 0);
     transform: skew(0deg);
 }
 .card-for-event-bottom button span{
+    font-family: helvetica;
     font-size: 16px;
     margin-right: auto;
     padding-left: 15px;
@@ -1269,13 +1324,23 @@ footer .rights{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 15px 30px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 20px;
     box-shadow: none;
     height: fit-content;
-    padding: 10px 40px;
+    width: 25%;
   }
+  
+  @media screen and (max-width:900px){
+    .tab button {
+        width: fit-content;
+        font-size: 16px;
+        padding: 15px 15px;
+      }
+  }
+
+
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
@@ -1296,9 +1361,11 @@ footer .rights{
     font-size: 24px;
 }
 
-.tablinks {
-    display: flex;
-    flex-direction: column;
+.tablinks span{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    
 }
 
   .tabcontent.active {
