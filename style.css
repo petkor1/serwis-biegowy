@@ -538,7 +538,7 @@ nav .menu-items{
     left: 0;
 	right: 0;
 	bottom: 0;
-    padding: 20px 20px 80px 20px;
+    padding: 20px 20px 120px 20px;
     margin: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.767));
 
@@ -1103,6 +1103,7 @@ footer .rights{
 
 .event-title-container .distance-ikon img{
     display: flex;
+    flex: 1;
     width: 120px;
 }
 
