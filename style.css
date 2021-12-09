@@ -1007,6 +1007,7 @@ footer .rights{
 
 .event-header-container {
     position: relative;
+    /* top: 0px; */
     width: 100%;
     height: 785px;
     margin-bottom: -80px;
@@ -1015,7 +1016,7 @@ footer .rights{
 @media screen and (max-width:900px){
     .event-header-container {
         width: 100%;
-        height: 80vh;
+        height: 91vh;
         margin-bottom: -80px;
     }
 }
@@ -1176,6 +1177,12 @@ footer .rights{
 
 }
 
+@media screen and (max-width:900px){
+    .card-for-event-top ul {
+        display: none;
+    }
+}
+
 .card-for-event-icons {
     display: flex;
     justify-content: space-between;
@@ -1334,7 +1341,6 @@ footer .rights{
 }
 
 .maps-section-title{
-    padding: 20px;
     text-align: center;
 }
 .maps-description{
@@ -1400,7 +1406,6 @@ footer .rights{
   .tabcontent {
     display: none;
     flex-direction: column;
-    align-items: flex-end;
     /* padding: 20px; */
     border: 1px solid #ccc;
     /* border-top: none; */
@@ -1431,6 +1436,10 @@ footer .rights{
     .maps-title-container{
         padding: 0px 20px 20px 20px;
     }
+}
+.tabcontent a {
+    align-self: flex-end;
+    margin-top: 30px;
 }
 
 /*------------INFO--------------*/
