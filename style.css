@@ -1459,6 +1459,12 @@ footer .rights{
     align-self: flex-end;
     margin-top: 30px;
 }
+@media screen and  (max-width:900px){
+    .tabcontent a{
+        align-self: center;
+    }
+}
+
 
 /*------------INFO--------------*/
 
