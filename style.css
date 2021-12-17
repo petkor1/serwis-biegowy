@@ -34,12 +34,11 @@ button {
 }
 
 button:hover{
-    background: #F9B233;
-    color: #1c2525;
+    background: #f51d00;
 }
 a {
     text-decoration: none;
-    font-family: sans-serif;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -164,7 +163,7 @@ body{
 
 .nav-container{
     display: flex;
-    background: #1c2525;
+    background: white;
     z-index: 998;
     position: fixed; 
     width: 100%;
@@ -268,7 +267,21 @@ nav .social{
 
 
 nav .menu-items{
+    display: flex;
     margin-left: auto;
+}
+.menu-item{
+    padding-right: 30px;
+}
+.menu-item a{
+    font-family: helvetica;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+    padding-right: 20px;
+}
+.menu-item a img{
+    padding-right: 10px;
+    transform: rotate(180deg);
 }
 
 .dropdown {
@@ -305,17 +318,24 @@ nav .menu-items{
   }
 
 .dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+    color: #000000;
+    background-color: #CAD51F;
+    font-weight: bold;
   }
 
 .menu-button{
-    background: rgba(255, 255, 255, 0);
-    color: white;
-    padding: 10px 25px;
-    font-size: 15px;
+    background: #f9b03300;
+    color: black;
+    padding: 20px 25px;
+    height: fit-content;
+    font-family: helvetica;
+
+    font-size: 14px;
+    filter: none;
 
 }
+
+
 .menu-button img{
     transform: rotate(180deg);
 }
@@ -709,14 +729,12 @@ nav .menu-items{
 }
 
 .event-card-button{
+    
     display: flex;
     align-items: center;
     text-decoration: none;
     font-size: 18px;
-    font-style: italic;
-    font-weight: 900;
     text-transform: uppercase;
-    line-height: 140%;
     letter-spacing: 1.1px;
     color: #1c2525;
     border-top: 1px solid;
@@ -726,6 +744,7 @@ nav .menu-items{
 
 }
 .event-card-button span{
+    font-family: helvetica;
     padding-right: 15px;
     transition: padding-right 0.4s;
 }
@@ -1193,11 +1212,9 @@ footer .rights{
 .card-for-event-top ul li{
     list-style-type: none;
     font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 0.8px;
     padding-bottom: 15px;
-    color: rgba(0, 0, 0, 0.55);
+    color: rgba(0, 0, 0, 0.67);
 
 }
 
@@ -1256,7 +1273,7 @@ footer .rights{
     padding-bottom: 20px;
 }
 .card-for-event-bottom-event-price span{
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.67);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1264,6 +1281,7 @@ footer .rights{
 }
 .card-for-event-bottom-event-price h5{
     color: white;
+    padding-top: 5px;
     font-size: 28px;
 }
 .register-button{
@@ -1273,6 +1291,7 @@ footer .rights{
     margin: 0;
     padding: 0px 10px;
     background: #F9B233;
+    font-family: helvetica;
     font-size: 16px;
     letter-spacing: 1.1px;
     text-transform: uppercase ;
@@ -1282,11 +1301,12 @@ footer .rights{
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    color: white;
+    color: #232E2E;
 }
 .register-button:hover {
     background: rgba(255, 255, 255, 0);
     border: 1px solid white;
+    color: white;
 
 }
 
@@ -1367,7 +1387,7 @@ footer .rights{
 }
 .card-for-event-bottom-event-price .adnotacja{
     font-size: 10px;
-    color: #F98418;;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .maps-container {
