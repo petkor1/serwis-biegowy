@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pani Mogiła</title>
+    <title>Festiwal Biegów Górskich w Limanowej</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -105,17 +105,19 @@
 <!------------------ HEADER ----------------------->
     
     <div class="event-header-container">
-        <img id="imgDesktop" src="/images/pani-mogila-tlo-desktop.jpg" alt="Tajemnicze Kopce">
-        <img id="imgMobile" src="/images/pani-mogila-tlo-mobile.jpg" alt="Tajemnicze Kopce">
+        <img id="imgDesktop" src="/images/festiwal-biegow-gorskich-tlo-desktop.jpg" alt="Tajemnicze Kopce">
+        <img id="imgMobile" src="/images/festiwal-biegow-gorskich-tlo-mobil.jpg" alt="Tajemnicze Kopce">
         <div class="event-title-container">
             <div class="event-title">
-                <h5>10 kwietnia 2022</h5>
-                <div class="event-title-button"><h2>Pani Mogiła</h2></div>
-                <h5>Serce Beskidu,<br>Słopnice</h5>
+                <h5>5 czerwca 2022</h5>
+                <div class="event-title-button" ><h2>Festiwal Biegów Górskich w Limanowej</h2></div>
+                <!-- <h5>Park Miejski,</h5> -->
                 <div class="distance-ikon">
-                    <a href="#classic-card"><img src="/images/logo xrun classic BIAŁY KWADRAT SZABLON-01.png" alt="classic"></a>
-                    <a href="#mini-card"><img src="/images/logo xrun MINI BIAŁY KWADRAT SZABLON-01.png" alt="mini"></a>
-                    <a href="#kids-card"><img src="/images/logo xrun KIDS BIAŁY KWADRAT SZABLON-01.png" alt=""></a>
+                    <a href="#ultra-card">Ultra</a>
+                    <a href="#classic-card">Classic</a>
+                    <a href="#mini-card">Mini</a>
+                    <a href="#begginer-card">Beginer</a>
+                    <a href="#kids-card">Kids</a>
                 </div>
             </div>
         </div>
@@ -125,9 +127,86 @@
 
     <div class="events">
         <div class="events-container">
-            <div id="classic-card" class="card-for-event">
+            <div id="ultra-card" class="card-for-event">
                 <div class="card-for-event-top">
-                    <img src="/images/logo xrun classic kolor-01 3Classic-.svg" style="width: 180px;" alt="Xrun Classic">
+                    <img src="/images/logo xrun ULTRA KOLOR-01 1.png" style="width: 180px;" alt="Xrun Classic"><span style="font-family: helvetica;">Mega Ultra Wyspa</span>
+                    <h4>100 km, 4500 m+</h4>
+                    <ul>
+                        <li><b>Biuro zawodów:</b> Słopnice</li>
+                        <li><b>Start:</b>
+                                9:30<br>
+                                Słopnice
+                            
+                        </li>
+                        <li><b>Meta:</b>limit 4 h<br>
+                            Słopnice
+                        </li>
+                    </ul>
+                    <div class="card-for-event-icons">
+                        <a href="#trasa" class="card-for-event-icon"><img src="/images/map.svg" alt="Mapa trasy"><span>Mapa<br>Trasy</span></a>
+                        <a href="#info" class="card-for-event-icon"><img src="images/satellite.svg" alt="Trasa GPX"><span>Ważne<br>info</span></a>
+                        <a href="/regulaminy/Regulamin XRUN 2022-wer-08-12-2021.pdf" target="_blank" class="card-for-event-icon"><img src="images/pan_tool.svg" alt="Regulamin"><span>Regulamin</span></a>
+                        <a href="https://zapisy.raatiming.pl/xrun-panimogila-32km-ii.html" class="card-for-event-icon"><img src="images/speaker_notes.svg" alt="Lista startowa"><span>Lista startowa</span></a>     
+                    </div>
+                </div>
+                <div class="card-for-event-bottom">
+                    <div class="card-for-event-bottom-button">
+                        <div class="card-for-event-bottom-event-price">
+                            <span>Przedsprzedaż</span>
+                            <h5>100,00 zł</h5>
+                            <span class="adnotacja">cena rośnie od 01/01/2022</span>
+
+                        </div>
+                        <a class="register-button" href="https://zapisy.raatiming.pl/xrun-panimogila-32km.html">Rejestracja</a>
+                        
+                    </div>
+
+                    <ul>
+                        <li class="nonlist">+ MEDAL NA MECIE</li>
+                        <li class="nonlist">+ CIEPŁY POSIŁEK</li>
+                        <li class="nonlist">+ PAMIĄTKOWE ZDJĘCIA</li>
+                        <li class="nonlist">+ NAGRODY DLA NAJLEPSZYCH</li>
+                        <li class="nonlist">+ NIEZAPOMNIANE PRZEŻYCIA</li>
+                        <li class="nonlist">+ GADŻETY OD SPONSORÓW</li>
+                    </ul>
+
+                    <button class="btn-accordion" onclick="accordion('accordion-show')">
+                            <img src="/images/ikona-cena.svg" alt="ikona cena">
+                            <span>Zobacz cennik</span>
+                            <img id="arrow-price-down" src="/images/ikona-strzałka-cena.svg" alt="strzałka cena">
+                    </button>
+                    <div id="accordion-show" class="accordion-show">
+                        <table id="prices-table">
+                            <tr>
+                              <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">1 Przedsprzedaż</span><span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span></td>
+                              <td class="td-left-column">100,00 zł</tr>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">2 Cena</span><span style="font-size: 16px; color: #F9B233;"> do 28.02.2022</span></td>
+                                <td class="td-left-column">120,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">3 Cena</span><span style="font-size: 16px; color: #F9B233;"> do 06.04.2022</span></td>
+                                <td class="td-left-column">130,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">4 Cena</span>
+                                    <span style="font-size: 16px; color: #F9B233;">w biurze zawodów</span></td>
+                                <td class="td-left-column">150,00 zł</td>
+                            </tr>
+
+                            
+                          </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div id="ultra-card" class="card-for-event">
+                <div class="card-for-event-top">
+                    <img src="/images/logo xrun ULTRA KOLOR-01 1.png" style="width: 180px;" alt="Xrun Classic"><span style="font-family: helvetica;">Ultra Wyspa</span>
                     <h4>32 km, 1100 m+</h4>
                     <ul>
                         <li><b>Biuro zawodów:</b> Słopnice</li>
@@ -202,9 +281,162 @@
 
             </div>
 
+            <div id="classic-card" class="card-for-event">
+                <div class="card-for-event-top">
+                    <img src="/images/logo xrun classic kolor-01 3Classic-.svg" style="width: 180px;" alt="Xrun Classic"><span style="font-family: helvetica;">Bieg Czterech Wysp</span>
+                    <h4>32 km, 1100 m+</h4>
+                    <ul>
+                        <li><b>Biuro zawodów:</b> Słopnice</li>
+                        <li><b>Start:</b>
+                                9:30<br>
+                                Słopnice
+                            
+                        </li>
+                        <li><b>Meta:</b>limit 4 h<br>
+                            Słopnice
+                        </li>
+                    </ul>
+                    <div class="card-for-event-icons">
+                        <a href="#trasa" class="card-for-event-icon"><img src="/images/map.svg" alt="Mapa trasy"><span>Mapa<br>Trasy</span></a>
+                        <a href="#info" class="card-for-event-icon"><img src="images/satellite.svg" alt="Trasa GPX"><span>Ważne<br>info</span></a>
+                        <a href="/regulaminy/Regulamin XRUN 2022-wer-08-12-2021.pdf" target="_blank" class="card-for-event-icon"><img src="images/pan_tool.svg" alt="Regulamin"><span>Regulamin</span></a>
+                        <a href="https://zapisy.raatiming.pl/xrun-panimogila-32km-ii.html" class="card-for-event-icon"><img src="images/speaker_notes.svg" alt="Lista startowa"><span>Lista startowa</span></a>     
+                    </div>
+                </div>
+                <div class="card-for-event-bottom">
+                    <div class="card-for-event-bottom-button">
+                        <div class="card-for-event-bottom-event-price">
+                            <span>Przedsprzedaż</span>
+                            <h5>100,00 zł</h5>
+                            <span class="adnotacja">cena rośnie od 01/01/2022</span>
+
+                        </div>
+                        <a class="register-button" href="https://zapisy.raatiming.pl/xrun-panimogila-32km.html">Rejestracja</a>
+                        
+                    </div>
+
+                    <ul>
+                        <li class="nonlist">+ MEDAL NA MECIE</li>
+                        <li class="nonlist">+ CIEPŁY POSIŁEK</li>
+                        <li class="nonlist">+ PAMIĄTKOWE ZDJĘCIA</li>
+                        <li class="nonlist">+ NAGRODY DLA NAJLEPSZYCH</li>
+                        <li class="nonlist">+ NIEZAPOMNIANE PRZEŻYCIA</li>
+                        <li class="nonlist">+ GADŻETY OD SPONSORÓW</li>
+                    </ul>
+
+                    <button class="btn-accordion" onclick="accordion('accordion-show')">
+                            <img src="/images/ikona-cena.svg" alt="ikona cena">
+                            <span>Zobacz cennik</span>
+                            <img id="arrow-price-down" src="/images/ikona-strzałka-cena.svg" alt="strzałka cena">
+                    </button>
+                    <div id="accordion-show" class="accordion-show">
+                        <table id="prices-table">
+                            <tr>
+                              <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">1 Przedsprzedaż</span><span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span></td>
+                              <td class="td-left-column">100,00 zł</tr>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">2 Cena</span><span style="font-size: 16px; color: #F9B233;"> do 28.02.2022</span></td>
+                                <td class="td-left-column">120,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">3 Cena</span><span style="font-size: 16px; color: #F9B233;"> do 06.04.2022</span></td>
+                                <td class="td-left-column">130,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">4 Cena</span>
+                                    <span style="font-size: 16px; color: #F9B233;">w biurze zawodów</span></td>
+                                <td class="td-left-column">150,00 zł</td>
+                            </tr>
+
+                            
+                          </table>
+                    </div>
+
+                </div>
+
+
+            </div>
             <div id="mini-card" class="card-for-event">
                 <div class="card-for-event-top">
-                    <img src="/images/logo xrun MINU kolor-01-01mini-.svg" style="width: 180px;" alt="Xrun mini">
+                    <img src="/images/logo xrun classic kolor-01 3Classic-.svg" style="width: 180px;" alt="Xrun Classic"><span style="font-family: helvetica;">Wyspiańska Połówka</span>
+                    <h4>32 km, 1100 m+</h4>
+                    <ul>
+                        <li><b>Biuro zawodów:</b> Słopnice</li>
+                        <li><b>Start:</b>
+                                9:30<br>
+                                Słopnice
+                            
+                        </li>
+                        <li><b>Meta:</b>limit 4 h<br>
+                            Słopnice
+                        </li>
+                    </ul>
+                    <div class="card-for-event-icons">
+                        <a href="#trasa" class="card-for-event-icon"><img src="/images/map.svg" alt="Mapa trasy"><span>Mapa<br>Trasy</span></a>
+                        <a href="#info" class="card-for-event-icon"><img src="images/satellite.svg" alt="Trasa GPX"><span>Ważne<br>info</span></a>
+                        <a href="/regulaminy/Regulamin XRUN 2022-wer-08-12-2021.pdf" target="_blank" class="card-for-event-icon"><img src="images/pan_tool.svg" alt="Regulamin"><span>Regulamin</span></a>
+                        <a href="https://zapisy.raatiming.pl/xrun-panimogila-32km-ii.html" class="card-for-event-icon"><img src="images/speaker_notes.svg" alt="Lista startowa"><span>Lista startowa</span></a>     
+                    </div>
+                </div>
+                <div class="card-for-event-bottom">
+                    <div class="card-for-event-bottom-button">
+                        <div class="card-for-event-bottom-event-price">
+                            <span>Przedsprzedaż</span>
+                            <h5>100,00 zł</h5>
+                            <span class="adnotacja">cena rośnie od 01/01/2022</span>
+
+                        </div>
+                        <a class="register-button" href="https://zapisy.raatiming.pl/xrun-panimogila-32km.html">Rejestracja</a>
+                        
+                    </div>
+
+                    <ul>
+                        <li class="nonlist">+ MEDAL NA MECIE</li>
+                        <li class="nonlist">+ CIEPŁY POSIŁEK</li>
+                        <li class="nonlist">+ PAMIĄTKOWE ZDJĘCIA</li>
+                        <li class="nonlist">+ NAGRODY DLA NAJLEPSZYCH</li>
+                        <li class="nonlist">+ NIEZAPOMNIANE PRZEŻYCIA</li>
+                        <li class="nonlist">+ GADŻETY OD SPONSORÓW</li>
+                    </ul>
+
+                    <button class="btn-accordion" onclick="accordion('accordion-show')">
+                            <img src="/images/ikona-cena.svg" alt="ikona cena">
+                            <span>Zobacz cennik</span>
+                            <img id="arrow-price-down" src="/images/ikona-strzałka-cena.svg" alt="strzałka cena">
+                    </button>
+                    <div id="accordion-show" class="accordion-show">
+                        <table id="prices-table">
+                            <tr>
+                              <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">1 Przedsprzedaż</span><span style="font-size: 16px; color: #F9B233;"> do 31.12.2021</span></td>
+                              <td class="td-left-column">100,00 zł</tr>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">2 Cena</span><span style="font-size: 16px; color: #F9B233;"> do 28.02.2022</span></td>
+                                <td class="td-left-column">120,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">3 Cena</span><span style="font-size: 16px; color: #F9B233;"> do 06.04.2022</span></td>
+                                <td class="td-left-column">130,00 zł</td>
+                            </tr>
+                            <tr>
+                                <td class="td-right-column"><span style="font-size: 15px; color:rgba(255, 255, 255, 0.55);">4 Cena</span>
+                                    <span style="font-size: 16px; color: #F9B233;">w biurze zawodów</span></td>
+                                <td class="td-left-column">150,00 zł</td>
+                            </tr>
+
+                            
+                          </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div id="begginer-card" class="card-for-event">
+                <div class="card-for-event-top">
+                    <img src="/images/logo xrun MINU kolor-01-01mini-.svg" style="width: 180px;" alt="Xrun mini"><span style="font-family: helvetica;">Bieg na miejską górę</span>
                     <h4>19 KM, 650 M+ </h4>
                     <ul>
                         <li><b>Biuro zawodów:</b> Słopnice</li>
@@ -280,7 +512,7 @@
 
             <div id="kids-card" class="card-for-event">
                 <div class="card-for-event-top">
-                    <img src="/images/logo xrun KIDS kolor-01-01kids-.svg" style="width: 180px;" alt="Xrun Classic">
+                    <img src="/images/logo xrun KIDS kolor-01-01kids-.svg" style="width: 180px;" alt="Xrun Classic"><span style="font-family: helvetica;">&nbsp;</span>
                     <h4>150 m, 300 m, 800 m</h4>
                     <ul>
                         <li><b>Biuro zawodów:</b> Słopnice</li>
@@ -370,17 +602,36 @@
             <div class="tab">
                 <button class="tablinks active" onclick="openTab(event, 'Tab1')">Classic<span> 32 km</span></button>
                 <button class="tablinks" onclick="openTab(event, 'Tab2')">Mini<span> 19 km</span></button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Mini<span> 19 km</span></button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Mini<span> 19 km</span></button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Mini<span> 19 km</span></button>
             </div>
             <!-- Tab content -->
             <div id="Tab1" class="tabcontent active">
                 <h3 style="padding: 20px;">32 KM, 1100 M+</h3>
-                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-32-km-4b01078?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                <a href="https://zapisy.raatiming.pl/xrun-panimogila-32km.html"><button>Zapisz się</button></a>
+                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-32-km-4b01078?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                
+                <a href="https://zapisy.raatiming.pl/xrun-panimogila-32km.html"><button>Zapisz się</button></a>
             
             </div>
             <div id="Tab2" class="tabcontent">
                 <h3 style="padding: 20px;">19 KM, 650 M+</h3>
-                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-19-km-5b5c2e6?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                <a href="https://zapisy.raatiming.pl/xrun-panimogila-19km.html"><button>Zapisz się</button></a>
-
+                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-19-km-5b5c2e6?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                
+                <a href="https://zapisy.raatiming.pl/xrun-panimogila-19km.html"><button>Zapisz się</button></a>
+            </div>
+            <div id="Tab2" class="tabcontent">
+                <h3 style="padding: 20px;">19 KM, 650 M+</h3>
+                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-19-km-5b5c2e6?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                
+                <a href="https://zapisy.raatiming.pl/xrun-panimogila-19km.html"><button>Zapisz się</button></a>
+            </div>
+            <div id="Tab2" class="tabcontent">
+                <h3 style="padding: 20px;">19 KM, 650 M+</h3>
+                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-19-km-5b5c2e6?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                
+                <a href="https://zapisy.raatiming.pl/xrun-panimogila-19km.html"><button>Zapisz się</button></a>
+            </div>
+            <div id="Tab2" class="tabcontent">
+                <h3 style="padding: 20px;">19 KM, 650 M+</h3>
+                <iframe class="alltrails" src="https://www.alltrails.com/widget/map/xrun-pani-mogila-19-km-5b5c2e6?u=m" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>                
+                <a href="https://zapisy.raatiming.pl/xrun-panimogila-19km.html"><button>Zapisz się</button></a>
             </div>
             <!-- <div id="Tab3" class="tabcontent">
                 <h3>150 M, 300 M, 800 M</h3>
