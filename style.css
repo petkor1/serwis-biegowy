@@ -164,7 +164,7 @@ body{
 .nav-container{
     display: flex;
     background: white;
-    z-index: 99;
+    z-index: 999;
     position: fixed; 
     width: 100%;
     top: 0; 
