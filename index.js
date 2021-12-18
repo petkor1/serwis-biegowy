@@ -4,8 +4,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("nav").style.padding = "0px 20px";
+    document.getElementById("nav").style.padding = "7px 20px";
     document.getElementById("logo").style.height = "35px";
+    document.getElementById("nav").style.boxShadow = "0px 2px 6px rgba(0, 0, 0, 0.18)";
   } else {
     document.getElementById("nav").style.padding = "10px 20px";
     document.getElementById("logo").style.height = "65px";
