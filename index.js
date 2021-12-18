@@ -78,7 +78,7 @@ function subMenuEvents() {
   };
 
   var toggleHeader = function(direction, curScroll) {
-    if (direction === 2 && curScroll > 52) { 
+    if (direction === 2 && curScroll > 75) { 
 
       //replace 52 with the height of your header in px
 
