@@ -164,7 +164,7 @@ body{
 .nav-container{
     display: flex;
     background: white;
-    z-index: 998;
+    z-index: 99;
     position: fixed; 
     width: 100%;
     top: 0; 
@@ -352,6 +352,20 @@ nav .menu-items{
     background: #ffffff;
 }
 
+#site-header {
+    position: fixed;
+    height: fit-content;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all .3s ease;
+    box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+#site-header.hide {
+    top: -76px;
+}
+
 
 .nav-mobile-container a{
     text-decoration: none;
@@ -388,7 +402,7 @@ nav .menu-items{
     display: none;
     position: absolute;
     transition: all 0.4s;
-    top: 75px;
+    /* top: 75px; */
     width: 100%;
     flex-direction: column;
     background: white;
