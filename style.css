@@ -1356,6 +1356,18 @@ footer .rights{
     display: none;
     padding-top: 20px;
 }
+#accordion-show-3 {
+    display: none;
+    padding-top: 20px;
+}
+#accordion-show-4{
+    display: none;
+    padding-top: 20px;
+}
+#accordion-show-5 {
+    display: none;
+    padding-top: 20px;
+}
 /* .accordion-show{
     position: absolute;
     box-sizing: border-box;
