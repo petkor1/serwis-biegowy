@@ -1558,6 +1558,24 @@ footer .rights{
     list-style-position: outside;
 }
 
+.info-container .title {
+    margin-top: -132px;
+    padding-bottom: 60px;
+}
+.breadcrumbs {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.67);
+}
+.link-breadcrumbs a{
+    color: black;
+}
+.page-breadcrumbs {
+    text-decoration: underline;
+}
+
 
 
 /*------------ZASADY--------------*/
@@ -1607,3 +1625,65 @@ footer .rights{
         min-width: 90px;
     }
   }
+
+/*------------CENNIK--------------*/
+.cennik{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.cennik-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+  .cennik-name-event {
+      padding: 10px 20px;
+      background: #F9B233;
+      transform: skew(-10deg);
+      width: fit-content;
+  }
+  .cennik-name-event h6{
+    padding: 0;
+    margin:0;
+    color: white;
+    line-height: 80%;
+    transform: skew(10deg);
+}
+.cennik-name-event h5{
+    transform: skew(10deg);
+    color: white;
+
+}
+.cennik-tables{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cennik-table{
+    padding-top: 20px;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    min-width: 350px;
+
+}
+.cennik-table table{
+    padding: 10px;
+}
+.cennik-table h6{
+    color: rgba(0, 0, 0, 0.67);
+}
+.cennik-table .left-column{
+    color: rgba(0, 0, 0, 0.67);
+
+}
+.cennik-table .price-date{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.spacing-100{
+    min-height: 100px;
+}
