@@ -1561,10 +1561,42 @@ footer .rights{
 
 
 /*------------ZASADY--------------*/
-.pkt-table{
+.overflow-x{
     overflow-x: auto;
 }
+.pkt-table{
+    margin-top: 40px;
+}
+.pkt-table td{
+    padding-bottom: 8px;
+}
+
 .td-pkt {
-    width: 165px;
+    display: flex;
+    flex: 1;
     text-align: left;
 }
+.td-position {
+    width: 100px;
+}
+.pkt-table td{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+@media screen and (min-width: 900px) {
+    .pkt-table{
+        width: 100%;
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .td-pkt {
+        min-width: 120px;
+    }
+    .td-position {
+        min-width: 90px;
+    }
+  }
