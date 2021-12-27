@@ -98,6 +98,15 @@ h5 {
     letter-spacing: 1.1px;
     color: #1c2525;
 }
+h6{
+    font-size: 18px;
+    /* font-style: italic; */
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 110%;
+    letter-spacing: 1px;
+    color: #1c2525;
+}
 
 p {
     font-family: sans-serif;
@@ -1542,5 +1551,20 @@ footer .rights{
 .info-container a {
     margin-top: 30px;
     align-self: center;
+    color: rgba(0, 0, 0, 0.67);
+}
+.info-container ul {
+    list-style: square inside url("/images/strazlka-czerwona-prawa.svg");
+    list-style-position: outside;
 }
 
+
+
+/*------------ZASADY--------------*/
+.pkt-table{
+    overflow-x: auto;
+}
+.td-pkt {
+    width: 165px;
+    text-align: left;
+}
