@@ -1562,6 +1562,24 @@ footer .rights{
     margin-top: -132px;
     padding-bottom: 60px;
 }
+
+.info-container .adres-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.info-container .adres-data a{
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.info-container .adres-data address{
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    padding-top: 30px;
+}
+
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
