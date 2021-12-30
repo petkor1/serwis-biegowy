@@ -1,0 +1,46 @@
+
+/* variable.css */
+
+/*
+ *   copyright 2021 Piotr Korbas
+*/
+
+
+:root {
+
+
+ /* colors */
+
+ --white: white;
+ --red:#F4442E;
+ --button-hover: #f51d00;
+ --orange:#F9B233;
+ --green:#CAD51F;
+ --secondary: #1c2525;
+ --black: black;
+ --black-87: rgba(0, 0, 0, 0.87);
+ --black-67: rgba(0, 0, 0, 0.67);
+ --black-37: rgba(0, 0, 0, 0.37);
+ --grey:#555;
+
+
+ /* typography */
+
+ --ng-1: 96px;
+ --ng-2: 60px;
+ --ng-3: 48px;
+ --ng-4: 34px;
+ --ng-5: 24px;
+ --ng-6: 18px;
+ --text:   16px;
+ --button-text: 20px;
+
+
+ /* shadows */
+
+ --button-shadow: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 18px rgba(0, 0, 0, 0.12)) drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+ --primar-shadowy: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+ --secondary-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+
+}
