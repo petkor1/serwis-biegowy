@@ -982,25 +982,22 @@ nav .menu-items{
 
 .partners-logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    gap: 30px;
+    gap: 100px;
 }
 
 .partners-logo div {
     display: flex;
-    flex: 1;
-}
-.partners-logo div a{
-    display: flex;
-    flex: 1;
+    max-height: 150px;
 }
 
 .partners-logo img {
     margin: auto;
     max-width: 150px;
+    max-height: 100%;
 }
 
 
