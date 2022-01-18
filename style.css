@@ -486,7 +486,7 @@ nav .menu-items{
 
 /*------------HEADER--------------*/
 .baner {
-    max-width: 1400px;
+    width: 100%;
     margin: 85px auto -5px auto;
 }
 
@@ -512,7 +512,7 @@ nav .menu-items{
     display: none;
     gap: 0;
     width: 100%;
-    max-height: 100vh;
+    max-height: 85vh;
     background: #1c2525;
 } 
 @media screen and (max-width: 900px){
@@ -588,7 +588,7 @@ nav .menu-items{
 }
 
 .main-item:hover{
-    flex:1.4;
+    flex:1.2;
 }
 .main-item img{
     width: 100%;
