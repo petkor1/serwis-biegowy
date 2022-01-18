@@ -490,6 +490,12 @@ nav .menu-items{
     margin: 85px auto -5px auto;
 }
 
+@media screen and (max-width: 900px) {
+    .baner {
+        margin: 74px auto -5px auto;
+    }
+  }
+
 .baner img {
     width: 100%;
     margin: auto;
