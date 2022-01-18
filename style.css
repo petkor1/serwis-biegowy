@@ -485,12 +485,22 @@ nav .menu-items{
 
 
 /*------------HEADER--------------*/
+.baner {
+    max-width: 1400px;
+    margin: 85px auto -5px auto;
+}
+
+.baner img {
+    width: 100%;
+    margin: auto;
+}
+
 .header-container {
     position: relative;
     display: flex;
     gap: 0;
     width: 100%;
-    height: 100vh;
+    height: 73vh;
     background: #1c2525;
 }
 @media screen and (max-width: 900px) {
