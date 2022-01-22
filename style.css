@@ -1542,6 +1542,19 @@ footer .rights{
     flex-direction: column;
 }
 
+.tabcontent .gpx-download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tabcontent .gpx-download a{
+    margin-top: 0;
+    align-self: center;
+    color: var(--red);
+    text-decoration: underline;
+}
+
 .maps-title-container{
     display: flex;
     flex-direction: column;
