@@ -186,6 +186,10 @@ body{
 .greyimage{
    filter: grayscale(100%); 
 }
+
+.mb-100 {
+    margin-bottom: 100px;
+}
   
 
 /*------------NAWIGACJA--------------*/
