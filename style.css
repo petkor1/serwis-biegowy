@@ -190,6 +190,10 @@ body{
 .mb-100 {
     margin-bottom: 100px;
 }
+
+.line-through{
+    text-decoration: line-through;
+}
   
 
 /*------------NAWIGACJA--------------*/
